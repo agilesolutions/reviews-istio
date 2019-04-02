@@ -11,13 +11,14 @@ import org.eclipse.microprofile.rest.client.inject.RestClient;
 @Path("/reviews")
 public class ReviewsResource {
 
-	@Inject
-	@RestClient
-	private RatingsServiceClient ratingsService;
+//	@Inject
+//	@RestClient
+//	private RatingsServiceClient ratingsService;
 
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getReviews() {
-		return String.format("Reviewed with rating %s", ratingsService.getRatings());
+//		return String.format("Reviewed with rating %s", ratingsService.getRatings());
+		return "reviews done";
 	}
 }
